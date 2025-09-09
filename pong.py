@@ -1,11 +1,10 @@
 import pygame
 
 
-pygame.init() #auto explicativo kkkk começar a rodar o pygame
+pygame.init() #initializes Pygame
 
-
-window = pygame.display.set_mode([1280, 720]) #criei uma variavel com o tamanho da janela do jogo
-title = pygame.display.set_caption("Pong") #uma variavel p/ titulo
+window = pygame.display.set_mode([1280, 720]) #created a variable with the size of the game window
+title = pygame.display.set_caption("Pong") #a variable for title
 
 win = pygame.image.load("sprites/assets/win.png")
 
@@ -14,7 +13,7 @@ score1_img = pygame.image.load("sprites/assets/score/0.png")
 score2 = 0
 score2_img = pygame.image.load("sprites/assets/score/0.png")
 
-scenario = pygame.image.load("sprites/assets/field.png") #variavel p/ cenario(fundo), pega o arquivo de outra pasta
+scenario = pygame.image.load("sprites/assets/field.png") #variable for scenery (background), takes the file from another folder
 
 player1 = pygame.image.load("sprites/assets/player1.png")
 player1_x = 50
@@ -106,10 +105,10 @@ def move_ball():
 
 def draw():
     if score1 or score2 < 9:
-        window.blit(scenario, (0, 0)) #p/ adicionar uma imagem na janela do jogo
-        window.blit(player1, (player1_x, player1_y)) #adicionar sprite do player1
-        window.blit(player2, (player2_x, player2_y)) #adicionar sprite do player2
-        window.blit(ball, (ball_x, ball_y)) #adicionar sprite da bola
+        window.blit(scenario, (0, 0)) #to add an image to the game window
+        window.blit(player1, (player1_x, player1_y)) #add player1 sprite
+        window.blit(player2, (player2_x, player2_y)) #add player2 sprite
+        window.blit(ball, (ball_x, ball_y)) #add ball sprite
         window.blit(score1_img, (500, 50))
         window.blit(score2_img, (710, 50))
         move_ball()
@@ -118,18 +117,18 @@ def draw():
     else:
         window.blit(win, (300, 330))
 
-loop = True #variavel para deixar o programa aberto (até ser fechado)
+loop = True #variable to leave the program open (until closed)
 while loop:
 
-    for events in pygame.event.get(): #para cada evento que tiver dentro do "pygame.event.get()"
-        if events.type == pygame.QUIT: #se o tipo do evento for igual a "pygame.QUIT"(X para fechar) então
-            loop = False #se encerra a janela
-        if events.type == pygame.KEYDOWN: #se o tipo do evento for "tecla pressionada"
+    for events in pygame.event.get(): #for each event inside "pygame.event.get()"
+        if events.type == pygame.QUIT: #if the event type is equal to "pygame.QUIT"(X to close) then
+            loop = False #closes the window
+        if events.type == pygame.KEYDOWN: #if the event type is "key pressed"
             if events.key == pygame.K_w:
                 player1_moveup = True
             if events.key == pygame.K_s:
                 player1_movedown = True
-        if events.type == pygame.KEYUP: #se o tipo do evento for "tecla pressionada"
+        if events.type == pygame.KEYUP: #if the event type is "key released"
             if events.key == pygame.K_w:
                 player1_moveup = False
             if events.key == pygame.K_s:
