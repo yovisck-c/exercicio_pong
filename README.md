@@ -1,36 +1,32 @@
-# exercicio_pong
-Visão Geral
+# Pong Project
 
-Este projeto é um protótipo inicial de um clássico arcade “Pong” focado na implementação de mecânicas básicas de colisão, e movimentação de sprites. Foi desenvolvido para aprimorar minhas habilidades em Python em exclusivo utilizando a framework “Pygame” e entender o ciclo de desenvolvimento de um jogo.
-
-Como Rodar o Projeto
-1.  Certifique-se de ter Python instalado na sua máquina.
-2.  Instale as dependências:
+## Overview
+#### This project is an initial prototype of a classic "Pong" arcade game, focusing on implementing basic collision mechanics and sprite movement. It was developed to improve my Python skills, exclusively using the "Pygame" framework, and to understand the game development lifecycle.
+---
+**How to Run the Project**
+1. Make sure you have Python installed on your machine.
+   
+2. Install the dependencies:
     ```bash
     pip install pygame
     ```
-3.  Clone este repositório para o seu computador:
+3.  Clone this repository to your computer:
     ```bash
     git clone https://github.com/yovisck-c/exercicio_pong.git
     ```
-4.  Navegue até a pasta do projeto pelo terminal:
+4.  Navigate to the project folder via the terminal:
     ```bash
     cd exercicio_pong
     ```
-5.  Execute o jogo:
+5.  Run the game:
     ```bash
     python pong.py
     ```
 
-Projeto já finalizado!
+### **Project is now finished!**
+---
+#### **Credits and References**
 
-Créditos e Referências
-Este projeto foi desenvolvido como parte de um exercício prático do curso "Python - Desenvolvimento de jogos", do Renato Ikeuchi, postado na plataforma da Udemy.
+This project was developed as part of a practical exercise from the "Python - Game Development" course, by Renato Ikeuchi, posted on the Udemy platform.
 
-* **Link do Curso:** https://www.udemy.com/share/103Bzg3@B1pONw4Rj9HF--OVwOH-Hgj7bDT2QW6zgS3X3TMuIOIRqyD4MOOQkWB6nXvrpMRdzg==/
-
-Contato:
-
-Desenvolvido por **Maria Clara Piromali Guarizo**
-
-Conecte-se comigo no LinkedIn: https://br.linkedin.com/in/maria-clara-piromali-guarizo-6b8a21357
+* **Course Link:** [https://www.udemy.com/share/103Bzg3@B1pONw4Rj9HF--OVwOH-Hgj7bDT2QW6zgS3X3TMuIOIRqyD4MOOQkWB6nXvrpMRdzg==/](https://www.udemy.com/share/103Bzg3@B1pONw4Rj9HF--OVwOH-Hgj7bDT2QW6zgS3X3TMuIOIRqyD4MOOQkWB6nXvrpMRdzg==/)
